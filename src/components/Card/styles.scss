@@ -1,14 +1,14 @@
 .card {
-    width: 100%;
-    max-width: 222px;
-
+    
     &__container {
-
+        
+        width: 100%;
+        max-width: 222px;
     }
 
     &__image {
         border: 1px solid var(--lightgreen);
-        border: 1rem;
+        border-radius: 1rem;
         box-sizing: border-box;
         height: 222px;
         width: 100%;
@@ -23,6 +23,12 @@
             line-height: 2.8rem;
             color: var(--black);
         }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            margin-bottom: 1.8rem;
+        }
     
     }
 
@@ -30,7 +36,22 @@
         display: grid;
         grid-template-columns: repeat(5, 3rem);
         grid-gap: .5rem;
-        margin-top: .5rem;
+        margin: 1.4rem auto;
+        list-style-type: none;
+
+        &__item {
+            background-color: var(--blue);
+            border-radius: 5px;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--unchecked {
+                background-color: var(--lightgray);
+            }
+        }
 
     }
 }

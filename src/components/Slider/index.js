@@ -1,16 +1,35 @@
 import React from 'react'
-import './styles.scss'
-
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Pagination } from 'swiper'
 import Card from '../Card'
+
+import 'swiper/swiper-bundle.css'
+
+SwiperCore.use([Pagination])
 
 function Slider() {
     return (
-        <React.Fragment>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-        </React.Fragment>
+        <Swiper slidesPerView={4}>
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <Card />
+            </SwiperSlide>
+        </Swiper>
     )
 }
 

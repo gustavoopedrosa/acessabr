@@ -18,7 +18,7 @@ function Footer() {
                     <p>
                         <strong>Projeto Elaborado durante a RDW <a href="https://ebaconline.com" target="_blank">E.B.A.C</a> 2021</strong>
                         <small>
-                        Projetado por Marcelo Cavalcante e Miguel Maia, desenvolvido por <a href="https://github.com/gustavoopedrosa" target="_blank">Gustavo Pedrosa.</a>
+                        Projetado por <a href="https://github.com/cavalcantemmarcelo">Marcelo Cavalcante</a> e <a href="https://github.com/mja-maia">Miguel Maia</a>, desenvolvido por <a href="https://github.com/gustavoopedrosa" target="_blank">Gustavo Pedrosa.</a>
                         </small>
                     </p>
                     <a href="#top" className="button">
