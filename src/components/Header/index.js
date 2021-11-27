@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.scss'
 import logoAcessaBr from '../../images/logo-acessaBR.svg'
-import logoEbac from '../../images/logo-ebac.svg'
+import logoEbac from '../../images/logo-ebac1.svg'
 
 const Header = props => {
     return (
@@ -12,11 +12,11 @@ const Header = props => {
                     / { props.city } - { props.state }
                 </span>
             </div>
-            <div className="header__logo--ebac">
+            <div className="header__logo">
                 <span className="header__span">
                     Apoio:
                 </span>
-                <img src={logoEbac} alt="Logo EBAC"></img>
+                <img className="header__logo--ebac" src={logoEbac} alt="Logo EBAC"></img>
             </div>
         </header>
     )

@@ -1,4 +1,6 @@
-@import 'colors';
+@import '_colors';
+@import '_responsive';
+
 
 * {
     margin: 0;
@@ -33,6 +35,7 @@ body {
         width: 100%;
         max-width: 120rem;
         margin: 0 auto;
+        padding: 0 15px;
     }
 
 }
