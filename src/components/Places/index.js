@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Slider from '../Slider'
 import './styles.scss'
+import { FilterContext } from '../../contexts/FilterContext'
 
 const Places = () => {
+    const { filteredPlace, setFilteredPlace} = useContext(FilterContext)
+
     return (
         <section className="places">
             <div className="places__header">
-                <h2 className="places__title">Locais <span>Acessíveis</span></h2>
+                <h2 className="places__title">
+                    { filteredPlace ? filteredPlace + ' ' : 'Locais ' }
+                    <span>Acessíveis</span></h2>
                 <div className="places__select">
                     <h5>Ordernar por:</h5>
                     <select>
@@ -16,7 +21,7 @@ const Places = () => {
                 </div>
             </div>
             <div className="places__content">
-                <Slider/>
+                <Slider />
             </div>
         </section>
     )

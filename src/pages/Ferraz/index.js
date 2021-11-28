@@ -4,24 +4,29 @@ import imagemDestack from '../../images/image-destack.png'
 import Pills from '../../components/Pills'
 import { useParams } from 'react-router'
 import { LocationContext } from '../../contexts/LocationContexts'
+import { FilterContext } from '../../contexts/FilterContext'
 
 const PLACES = [
-    'Praça',
-    'Parque',
-    'Igreja',
-    'Hotel',
-    'Restaurante',
-    'Zoológico',
-    'Farmácia',
-    'Loja',
-    'Aquário'
+    'Mercados',
+    'Museus',
+    'Parques',
+    'Auditórios',
+    'Todos'
 ]
 
 const Ferraz = () => {
     const { city, state } = useParams()
-    const [selectedPill, setSelectedPill ] = useState('')
-
     const { setCity, setState } = useContext(LocationContext)
+    const { filteredPlace, setFilteredPlace } = useContext(FilterContext)
+
+    const handleFilterPlace = (item) => {
+        if(item !== filteredPlace){
+            setFilteredPlace(item)
+        }
+        if (item === 'Todos'){
+            setFilteredPlace('')
+        }
+    }
 
     useEffect(() => {
         setCity(city)
@@ -46,8 +51,8 @@ const Ferraz = () => {
                         PLACES.map((item) => (
                             <Pills
                                 local={item}
-                                selected={selectedPill === item}
-                                onClick={() => setSelectedPill(item)}
+                                selected={ filteredPlace === item}
+                                onClick={() => handleFilterPlace(item)}
                             />
                         ))
                     }

@@ -3,7 +3,9 @@
         {
             "id": 1,
             "name": "Museu da Língua Portuguesa",
-            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description":"A história e evolução do idioma são contadas de forma interativa numa ampla e moderna área de exposição.",
+            "link": "https://www.museudalinguaportuguesa.org.br/",
+            "categoty": "Museus",
             "location": {
                 "lat": "1234",
                 "long": "4321"
@@ -25,7 +27,9 @@
         {
             "id": 2,
             "name": "Mercado Municipal",
-            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description":"O oficialmente chamado Mercado Municipal Paulistano, conhecido por muitos apenas como Cantareira ou Mercadão é um dos mais tradicionais pontos turísticos da cidade.",
+            "link": "https://www.mercadomunicipalsp.com/",
+            "categoty": "Mercados",
             "location": {
                 "lat": "1234",
                 "long": "4321"
@@ -47,7 +51,9 @@
         {
             "id": 3,
             "name": "Auditório Ibirapuera",
-            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description":"O Auditório Ibirapuera é um edifício concebido por Oscar Niemeyer para apresentações de espetáculos musicais, situado no Parque do Ibirapuera, em São Paulo, Brasil.",
+            "link": "https://parqueibirapuera.org/equipamentos-parque-ibirapuera/auditorio-do-ibirapuera/",
+            "categoty": "Auditórios",
             "location": {
                 "lat": "1234",
                 "long": "4321"
@@ -69,7 +75,9 @@
         {
             "id": 4,
             "name": "Museu de Artes de São Paulo",
-            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description":"O Museu de Arte de São Paulo é um museu privado sem fins lucrativos, fundado em 1947 pelo empresário e mecenas Assis Chateaubriand (1892-1968), tornando-se o primeiro museu moderno no país.",
+            "link": "https://masp.org.br/",
+            "categoty": "Museus",
             "location": {
                 "lat": "1234",
                 "long": "4321"
@@ -91,7 +99,9 @@
         {
             "id": 5,
             "name": "Parque Independência",
-            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "description":"Tombado pelo CONDEPHAAT, CONPRESP E IPHAN, o parque é um marco histórico nacional. Na Colina do Ipiranga, junto ao Riacho do Ipiranga, D. Pedro I declarou o país independente de Portugal, em 1822.",
+            "link": "https://www.prefeitura.sp.gov.br/cidade/secretarias/meio_ambiente/parques/regiao_sul/index.php?p=5747",
+            "categoty": "Parques",
             "location": {
                 "lat": "1234",
                 "long": "4321"
